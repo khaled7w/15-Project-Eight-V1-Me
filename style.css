@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #271f13;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input {
+  width: 220px;
+  padding: 5px;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn .icon1 {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 6px;
+}
+
+.search .icon2 {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 6px;
+}
+
+.show-search {
+  /* display: none; */
+}
+
+.meals-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  margin: 0 auto;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.meal {
+  position: relative;
+}
+
+.meal img {
+  width: 200px;
+  height: 200px;
+}
+
+.content {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.content h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.content:hover {
+  opacity: 1;
+}
+
+.details-of-meal {
+  width: 70%;
+  margin: 20px auto;
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-of-meal img {
+  width: 200px;
+  height: 200px;
+}
+
+.details-of-meal .meal-data {
+  margin-top: 25px;
+  width: 85%;
+  border: dotted orangered 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.meal-data p:last-of-type {
+  margin-top: 5px;
+}
+
+.meal-instructions p {
+  letter-spacing: 0.5px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.ingridents h1 {
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.ingrident-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 5px;
+  column-gap: 10px;
+}
+
+.ingrident {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 5px;
+  color: #000;
+}
